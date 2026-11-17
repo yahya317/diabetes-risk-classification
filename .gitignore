@@ -1,0 +1,17 @@
+# Virtual environments (each person creates their own from requirements.txt)
+.venv/
+venv/
+
+# Python / Jupyter clutter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.pytest_cache/
+
+# OS files
+.DS_Store
+
+# Saved model weights (regenerate from the notebooks instead of committing)
+*.pt
+*.pth
+*.pkl
