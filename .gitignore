@@ -11,6 +11,10 @@ __pycache__/
 # OS files
 .DS_Store
 
+# Full raw dataset: kept locally only (download_split.py recreates it);
+# the working and reporting sets are what get committed
+Data/diabetes_012_health_indicators_BRFSS2015.csv
+
 # Saved model weights (regenerate from the notebooks instead of committing)
 *.pt
 *.pth
