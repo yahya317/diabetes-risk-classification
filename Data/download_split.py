@@ -23,8 +23,8 @@ from sklearn.model_selection import train_test_split
 DATA_DIR = Path(__file__).resolve().parent
 
 DATASET = "alexteboul/diabetes-health-indicators-dataset"
-CSV_NAME = "diabetes_012_health_indicators_BRFSS2015.csv"
-TARGET = "Diabetes_012"
+CSV_NAME = "diabetes_binary_health_indicators_BRFSS2015.csv"
+TARGET = "Diabetes_binary"
 SEED = 42
 
 FULL_PATH = DATA_DIR / CSV_NAME  # keep Kaggle's original file name so its source is obvious
@@ -33,7 +33,7 @@ REPORT_PATH = DATA_DIR / "reporting_set.csv"
 
 
 def download_full_csv() -> None:
-    """Download the 012 CSV from Kaggle and save an untouched copy as FULL_PATH.
+    """Download the binary CSV from Kaggle and save an untouched copy as FULL_PATH.
 
     Raises:
         RuntimeError: If the download or the copy fails.
